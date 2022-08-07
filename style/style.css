@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 header {
@@ -20,11 +19,16 @@ nav {
     display: flex;
     justify-content: space-around;
     font-size: 20px;
+    box-shadow: 1px 10px 10px rgb(84, 87, 88);
     padding-bottom: 15px;
-    box-shadow: 10px 10px 10px rgb(94, 94, 94);
+    position: relative;
+    z-index: 1;
+    
+    
+
 }
 
-.navv {
+.navv{
     padding: 0px 10px 0px;
 }
 
@@ -37,15 +41,12 @@ button {
     background: rgb(142, 142, 230);
 }
 
-.button2 {
-    background: rgb(223, 105, 105);
-}
-
 .button3 {
     background: rgb(110, 221, 110);
 }
 
 .conteiner {
+    padding-top: 20px;
     display: flex;
     justify-content: center;
     background: rgb(224, 207, 185);
@@ -86,3 +87,32 @@ footer{
 a:visited,a:link{
     color: white;
 }
+/*paginas*/
+
+.caixa1{
+   display: flex;
+   flex-direction:column ;
+   align-items: center;
+   padding-top: 20px;
+   width: 100%;
+}
+
+.frase1{
+    font-style: italic;
+    padding-top: 10px;
+}
+
+.comprar{
+   padding: 0px 10px 0px;
+   background-color: rgb(63, 156, 84);
+  
+}
+
+.quant{
+    position: relative;
+    padding: 20px 0px 50px;
+}
+
+
+
+
