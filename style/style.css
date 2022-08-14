@@ -1,35 +1,72 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
 header {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
     padding-bottom: 20px;
+}
+
+header a{
+    color:black ;
+    text-decoration: none;
 }
 
 .frase {
     font-size: 18px;
 }
 
-
+.vect{
+    position: relative;
+    top: 10px;
+}
+.search{
+    width: 25px;
+    position: relative;
+    top: 10px;
+    left: 5px;
+}
 
 nav {
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 20px;
+    box-sizing: border-box;
     box-shadow: 1px 10px 10px rgb(84, 87, 88);
     padding-bottom: 15px;
     position: relative;
     z-index: 1;
-    
-    
+
+
 
 }
 
-.navv{
+@media (max-width: 700px) {
+
+    nav,
+    .conteiner1,
+    .imgfooter {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+.navv {
     padding: 0px 10px 0px;
+}
+
+.navT a{
+    color:black ;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 button {
@@ -46,23 +83,25 @@ button {
 }
 
 .conteiner {
-    padding-top: 20px;
     display: flex;
-    justify-content: center;
-    background: rgb(224, 207, 185);
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0px 20px;
 
 }
 
-th,
-td,
-table {
-    border: 1px solid black;
+.conteiner1 {
+
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0px 20px;
+    box-shadow: 1px 2px 2px rgb(84, 87, 88);
 }
 
-th,
-td {
-    padding: 10px;
+.conteiner h2{
+    padding: 10px 0px 20px;
 }
+
 
 .imgfooter {
     display: flex;
@@ -70,49 +109,62 @@ td {
     color: white;
 }
 
-.img1{
+.img1 {
     color: white;
 }
 
 
-footer{
+footer  {
     background-color: black;
-    padding:20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-.link1{
+.link1 {
     padding: 0px 0px 0px 20px;
 }
 
-a:visited,a:link{
-    color: white;
-}
+
 /*paginas*/
 
-.caixa1{
-   display: flex;
-   flex-direction:column ;
-   align-items: center;
-   padding-top: 20px;
-   width: 100%;
+.caixa1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    width: 100%;
 }
 
-.frase1{
+.frase1 {
     font-style: italic;
     padding-top: 10px;
 }
 
-.comprar{
-   padding: 0px 10px 0px;
-   background-color: rgb(63, 156, 84);
-  
+.comprar {
+    padding: 0px 10px 0px;
+    background-color: rgb(63, 156, 84);
+
 }
 
-.quant{
+.quant {
     position: relative;
     padding: 20px 0px 50px;
 }
 
+.imgfooter div a{
+    text-decoration: none;
+    color: aliceblue;
+}
 
+.pconteiner {
+    padding-top: 20px;
+    display: flex;
+    justify-content: start;
 
+}
 
+nav .pesquisa{
+    display: flex;
+
+}
